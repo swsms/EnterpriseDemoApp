@@ -1,11 +1,7 @@
 package server;
 
 import ejb.TimeBean;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
 import javax.ejb.EJB;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
@@ -14,11 +10,15 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 /**
  *
  * @author Артем
  */
-@WebServlet(name = "TimeServlet", urlPatterns = {"/time", "/time/current"})
+@WebServlet(name = "TimeServlet", urlPatterns = {"", "/current"})
 public class TimeServlet extends HttpServlet {
 
     @EJB
