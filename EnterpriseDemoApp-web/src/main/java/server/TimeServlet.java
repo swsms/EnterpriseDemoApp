@@ -18,7 +18,8 @@ import java.util.Date;
  *
  * @author Артем
  */
-@WebServlet(name = "TimeServlet", urlPatterns = {"", "/current"})
+@WebServlet(name = "TimeServlet",
+        urlPatterns = {"", "/current"})
 public class TimeServlet extends HttpServlet {
 
     @EJB
